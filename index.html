@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+    <input type="color" id="colorPicker" value="#0000ff"> <!-- Initial color -->
+    <input type="color" id="colorPickerStart" value="#ff0000"> <!-- Start color -->
+    <input type="color" id="colorPickerEnd" value="#0000ff"> <!-- End color -->
+    <button id="toggleMode">Switch to Select Mode</button> <!-- Button to toggle modes -->
+    <input type="file" id="imageUpload" accept="image/*"> <!-- File input for uploading images -->
+    <div class="controls">
+      <label for="imageUpload">Upload Image:</label>
+      <input type="file" id="imageUpload" accept="image/*"><br><br>
+
+      <label for="brightness">Brightness:</label>
+      <input type="range" id="brightness" min="-1" max="1" step="0.1" value="0"><br><br>
+
+      <label for="contrast">Contrast:</label>
+      <input type="range" id="contrast" min="-1" max="1" step="0.1" value="0"><br><br>
+
+      <label for="grayscale">Grayscale:</label>
+      <input type="checkbox" id="grayscale"><br><br>
+
+      <button id="toggleMode">Switch to Select Mode</button>
+      <button id="resetFilters">Reset Filters</button>
+      <button id="undoButton">Undo</button>
+      <button id="redoButton">Redo</button>
+      <button id="downloadDesign">Download Design</button>
+  </div>
+    <script src="./lib/fabric.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
